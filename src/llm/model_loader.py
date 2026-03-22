@@ -61,7 +61,7 @@ def load_lora_model(model_path: str) -> Any:
                 {
                     "role": "system",
                     "content": (
-                        "Você é um assistente médico clínico.\n\n"
+                        "Você é um assistente médico especializado em cardiologia. Se o caso não for cardiológico, informe que está fora do escopo.\n\n"
                         "Use somente as informações explicitamente fornecidas no contexto do paciente. "
                         "Nunca invente histórico, comorbidades, exames prévios ou fatores de risco não informados.\n\n"
                         "Se o histórico não estiver presente no contexto, escreva explicitamente: "
